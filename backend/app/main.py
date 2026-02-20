@@ -44,8 +44,9 @@ _cors_origins = [
     "http://localhost:3000",
     "http://localhost:3001",
     "http://localhost:5173",
+    "https://city-walker-webapp.vercel.app",
 ]
-# Allow production frontend origin via env var
+# Allow additional production origins via env var
 _extra_origin = os.getenv("CORS_ORIGIN")
 if _extra_origin:
     _cors_origins.append(_extra_origin)
